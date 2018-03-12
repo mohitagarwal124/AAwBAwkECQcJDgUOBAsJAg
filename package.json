@@ -1,41 +1,46 @@
 {
-    "name": "currecy-converter",
-    "version": "1.0.0",
-    "description": "Converts currency from one currency to another",
-    "main": "currencyconverter_beanstalkd.js",
-    "dependencies": {
-        "assert": "^1.4.1",
-        "async": "^2.1.4",
-        "beanstalk_client": "^0.2.0",
-        "fivebeans": "^1.5.0",
-        "kue": "^0.11.5",
-        "moment": "^2.14.1",
-        "money": "^0.2.0",
-        "mongodb": "^2.2.21",
-        "open-exchange-rates": "^0.3.0"
-    },
-    "devDependencies": {
-        "eslint": "^3.15.0",
-        "eslint-config-aftership": "^3.3.0",
-        "eslint-config-standard": "^6.2.1",
-        "eslint-plugin-promise": "^3.4.1",
-        "eslint-plugin-standard": "^2.0.1"
-    },
-    "scripts": {
-        "lint": "eslint --ext .jsx,.js ."
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mohitagarwal124/AAwBAwkECQcJDgUOBAsJAg.git"
-    },
-    "keywords": [
-    "currency",
-    "converter"
+  "name": "currency converter",
+  "version": "1.0.0",
+  "description": "currency converter",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "lint": "eslint . --ext .js"
+  },
+  "author": "Mohit Agarwal",
+  "license": "ISC",
+  "keywords": [
+    "currency converter"
   ],
-    "author": "Mohit Agarwal",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/mohitagarwal124/AAwBAwkECQcJDgUOBAsJAg/issues"
-    },
-    "homepage": "https://github.com/mohitagarwal124/AAwBAwkECQcJDgUOBAsJAg#readme"
+  "dependencies": {
+    "async": "^2.1.4",
+    "beanstalk_client": "^0.2.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "1.18.2",
+    "celebrate": "7.0.4",
+    "cors": "2.8.4",
+    "express": "4.16.2",
+    "express-rate-limit": "2.11.0",
+    "fivebeans": "^1.5.0",
+    "helmet": "3.10.0",
+    "http": "0.0.0",
+    "money": "^0.2.0",
+    "mongodb": "^2.2.35",
+    "open-exchange-rates": "^0.3.0",
+    "pug": "2.0.0-rc.4",
+    "winston": "^2.4.0",
+    "winston-daily-rotate-file": "^1.7.2"
+  },
+  "devDependencies": {
+    "jest": "22.3.0",
+    "superagent": "3.8.2",
+    "supertest": "3.0.0",
+    "eslint": "4.0.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.1.0"
+  }
 }

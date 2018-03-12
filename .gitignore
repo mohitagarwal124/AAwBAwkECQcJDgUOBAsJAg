@@ -1,0 +1,14 @@
+node_modules/*
+test/artifacts/*
+npm-debug.log
+.env
+.idea/*
+log/*
+client/*
+.vscode/*
+server.js
+Views/*
+Routes/*
+Lib/validator.js
+Lib/response.js
+Log/*

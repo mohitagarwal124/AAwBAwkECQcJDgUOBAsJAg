@@ -1,0 +1,39 @@
+{
+    "PORT": 3000,
+    "SUPPORTED_CURRENCY": {
+        "USD": "USD",
+        "HKD": "HKD",
+        "EUR": "EUR",
+        "INR": "INR"
+    },
+    "BEANSTALKD": {
+        "TUBE": "mohitagarwal124",
+        "HOST": "challenge.aftership.net",
+        "PORT": 11300,
+        "WORKER": "worker_exchange",
+        "HANDLER": "exchange",
+        "PRIORITY": 0,
+        "DELAY": 60,
+        "TTR": 30
+    },
+    "MONGO": {
+        "URI": "mongodb://mohitagarwal:mongo2wXC@ds253918.mlab.com:53918/mohitagarwal",
+        "USERNAME": "mohitagarwal",
+        "PASSWORD": "mongo2wXC",
+        "DBNAME": "mohitagarwal",
+        "COLLECTION": {
+            "CURRENCY_RATES": "currencyRates"
+        }
+    },
+    "OPEN_EXCHANGE": {
+        "APP_KEY": "fd9c6e4e0c3441259e85cc3f47beba71"
+    },
+    "JOB" : {
+        "SUCCESS_LENGTH": 10,
+        "TRIES": 3,
+        "ERROR_DELAY": 3,
+        "SUCCESS_DELAY": 60,
+        "CURRENCY_ARRAY": [],
+        "TRY_COUNT": 0
+    }
+}
