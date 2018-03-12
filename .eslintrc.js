@@ -14,6 +14,7 @@ module.exports = {
         "no-plusplus": 0,
         "no-await-in-loop": 0,
         "new-cap": 0,
+        "no-mixed-operators": 0
 
     },
     "plugins": [
@@ -23,5 +24,8 @@ module.exports = {
         "describe": true,
         "test": true,
         "expect": true,
+        "db": true,
+        "client": true,
+        "logger": true 
     }
 };

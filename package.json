@@ -1,12 +1,13 @@
 {
-  "name": "currency converter",
+  "name": "currency-converter",
   "version": "1.0.0",
   "description": "currency converter",
-  "main": "server.js",
+  "main": "currency.js",
   "scripts": {
     "test": "jest",
-    "start": "node server.js",
-    "lint": "eslint . --ext .js"
+    "start": "node currency.js",
+    "eslint": "./node_modules/.bin/eslint ./ node currency.js",
+    "eslintfix": "./node_modules/.bin/eslint ./ --fix && node currency.js"
   },
   "author": "Mohit Agarwal",
   "license": "ISC",

@@ -8,24 +8,24 @@ const logPath = path.resolve('./Log');
 const tsFormat = () => (new Date()).toUTCString();
 
 const transports = [];
-  transports.push(
-    new (winstonRotateFile)({
-      name: 'Info File',
-      filename: `${logPath}/info.log`, // filename to be created
-      timestamp: tsFormat,
-      datePattern: 'yyyy-MM-dd',
-      prepend: true, // prepends date to name of file
-      level: 'info', // level of log
-    }),
-    new (winstonRotateFile)({
-      name: 'Error File',
-      filename: `${logPath}/error.log`, // filename to be created
-      timestamp: tsFormat,
-      datePattern: 'yyyy-MM-dd',
-      prepend: true, // prepends date to name of file
-      level: 'error', // level of log
-    }),
-  );
+transports.push(
+  new (winstonRotateFile)({
+    name: 'Info File',
+    filename: `${logPath}/info.log`, // filename to be created
+    timestamp: tsFormat,
+    datePattern: 'yyyy-MM-dd',
+    prepend: true, // prepends date to name of file
+    level: 'info', // level of log
+  }),
+  new (winstonRotateFile)({
+    name: 'Error File',
+    filename: `${logPath}/error.log`, // filename to be created
+    timestamp: tsFormat,
+    datePattern: 'yyyy-MM-dd',
+    prepend: true, // prepends date to name of file
+    level: 'error', // level of log
+  }),
+);
 
 exports.winstonLogger = new (winston.Logger)({
   transports,
